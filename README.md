@@ -233,7 +233,7 @@ def delete_task(user_id):
 
 1. Hit Get Project List Endpoint
 
-```typescriptreact
+```typescript
 const getProjects = async (userId: string) => {
   try {
     const response = await services.get(`/projects/${userId}`);
