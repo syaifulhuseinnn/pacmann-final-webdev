@@ -3,6 +3,54 @@
 ## IMPORTANT TO READ!
 > This project is very dependent on [Final Project Linux & Container](https://github.com/syaifulhuseinnn/pacmann-final-linux-container). You must clone both to your local computer and place them into same folder.
 
+## How to Install
+
+1. Create new folder on your computer. Let say named **final-project**
+
+2. Clone **pacmann-final-linux-container** and **pacmann-final-webdev** using commands below. Once done, there are folders **pacmann-final-linux-container** and **pacmann-final-webdev** on your computer
+
+```shell
+git clone https://github.com/syaifulhuseinnn/pacmann-final-linux-container.git
+
+git clone https://github.com/syaifulhuseinnn/pacmann-final-webdev.git
+```
+
+3. Copy all files and folders inside **pacmann-final-linux-container** and **pacmann-final-webdev** folders to **final-project** folder. The folder should look like below:
+
+```
+/final-project
+    /todo-app-backend
+       # other files here
+    /todo-app-frontend
+       # other files here
+    /db-backup
+       # other files here
+    /postgres
+       # other files here
+    backup.sh
+    compose.yaml
+    README.md
+    restore.sh
+```
+
+4. Now enter to folder **final-project** and start application stack using Docker. Container **final-project** will run. Validate with `docker ps` or Docker Desktop.
+
+```shell
+cd final-project
+docker compose up -d
+```
+
+5. You can access applications
+
+   - todo-app-frontend: `localhost:3001`
+   - todo-app-backend: `localhost:3000`
+   - database:
+      - host: `localhost`
+      - port: `5433`
+      - user: `postgres`
+      - password: `qwerty`
+      - database name: `todo-app`
+
 ## Background Problem
 
 Ridwan seorang project manager suatu perusahaan, ingin mengetahui progress task yang dilakukan oleh bawahannya. Oleh karena itu, dia meminta Bima yang seorang Web Developer membuat sebuah Todo App sederhana untuk memantau kinerja dari karyawan, Ridwan mendiskusikan fungsionalitas dari Todo App tersebuat bersama Bima, dimana Ridwan menginginkan Todo App tersebut memiliki beberapa fungsi seperti:
