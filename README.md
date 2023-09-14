@@ -246,7 +246,7 @@ const getProjects = async (userId: string) => {
 
 2. Hit Add New Task Endpoint
 
-```typescriptreact
+```typescript
 const addNewTask = async (
   userId: string,
   projectId: string,
@@ -266,7 +266,7 @@ const addNewTask = async (
 
 3. Hit Update Task Endpoint
 
-```typescriptreact
+```typescript
 const updateTask = async (
   userId: string,
   projectId: string,
@@ -290,7 +290,7 @@ const updateTask = async (
 
 4. Hit Delete Task Endpoint
 
-```typescriptreact
+```typescript
 const deleteTask = async (
   userId: string,
   projectId: string,
@@ -312,7 +312,7 @@ const deleteTask = async (
 
 5. Hit Create New Project Endpoint
 
-```typescriptreact
+```typescript
 const createNewProject = async (
   userId: string,
   title: string
